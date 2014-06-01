@@ -1,5 +1,4 @@
 # pylint: disable=W0401,W0614
-import os
 from settings import *
 
 PROJECT_DIR = os.path.split(os.path.split(os.path.abspath(__file__))[0])[0]

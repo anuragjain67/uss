@@ -175,7 +175,7 @@ PIPELINE_CSS = {
 
 PIPELINE_JS = {
     'uss_code_js': {
-        'source_filenames': (            
+        'source_filenames': (
             r'js/app.js',
             r'js/controllers/url-list.js',
             r'js/controllers/url-detail.js',

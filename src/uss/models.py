@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Tag(models.Model):
     """
     Model for tags of user
@@ -14,6 +15,7 @@ class Tag(models.Model):
     class Meta:
         verbose_name_plural = "Tags"
 
+
 class UrlDesc(models.Model):
     """
     Model for Desc of Url
@@ -21,7 +23,7 @@ class UrlDesc(models.Model):
     user = models.ForeignKey(User)
     link = models.TextField(blank=True, null=True)
     desc = models.TextField(blank=True, null=True)
-    title = models.CharField(max_length=64, null=True)        
+    title = models.CharField(max_length=64, null=True)
     tags = models.ManyToManyField(Tag, null=True)
 
     def __unicode__(self):
